@@ -87,7 +87,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+m split h
+bindsym $mod+b split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -192,7 +192,7 @@ bindsym $mod+i workspace prev
 bindsym Mod1+Tab workspace back_and_forth
 
 # Display Resolution
-exec_always xrandr --output eDP-1 --mode 1920x1080
+exec_always xrandr --output eDP-1 --mode 1920x1080 --primary
 
 # Compositor
 exec picom --experimental-backend --config ~/Downloads/workspace/Fallout_NV_leftwm_theme/configs/picom.conf
@@ -202,7 +202,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
 
 # Display Wallpaper
-exec_always feh --bg-fill ~/Pictures/BEST/tixnen/40f80a1a74978a7fc8191d1024f2135e.jpeg
+exec_always feh --bg-center ~/Pictures/BEST/tixnen/85e3f61bb053f18876d996c24b4d21f0.jpeg
 
 # Resize windows
 bindsym $mod+Ctrl+l resize shrink width 5 px or 5 ppt
@@ -226,6 +226,7 @@ bar {
     i3bar_command i3bar --transparency
     position bottom
     font pango:CaskaydiaCove Nerd Font 11
+    tray_output primary
 
     colors {
       background #00000080
