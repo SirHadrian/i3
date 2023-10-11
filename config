@@ -223,14 +223,16 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 client.background       #ffffff
 bar {
   status_command i3status -c ~/.config/i3/i3status.conf
+    i3bar_command i3bar --transparency
     position bottom
     font pango:CaskaydiaCove Nerd Font 12
 
     colors {
-      background #000000
+      background #99000000
         statusline #ffffff
         separator #0000ff
 
+        # colors           outline backgr  number
         focused_workspace  #4c7899 #285577 #ffffff
         active_workspace   #333333 #5f676a #ffffff
         inactive_workspace #333333 #222222 #888888
