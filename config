@@ -202,7 +202,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
 
 # Display Wallpaper
-exec_always feh --bg-center ~/Pictures/BEST/tixnen/85e3f61bb053f18876d996c24b4d21f0.jpeg
+exec_always feh --bg-center ~/Pictures/BEST/tixnen/2f37ba9582a34214ca6dc8ebfae22e816cdfba77.jpg
 
 # Resize windows
 bindsym $mod+Ctrl+l resize shrink width 5 px or 5 ppt
@@ -214,7 +214,7 @@ bindsym $mod+Ctrl+h resize grow width 5 px or 5 ppt
 # finds out, if available)
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
+client.focused          #4c7899 #285577 #ffffff #00ffff   #285577
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
