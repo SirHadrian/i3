@@ -224,6 +224,7 @@ client.background       #ffffff
 bar {
   status_command i3status -c ~/.config/i3/i3status.conf
     position bottom
+    font pango:CaskaydiaCove Nerd Font 12
 
     colors {
       background #000000
