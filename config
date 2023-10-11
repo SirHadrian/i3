@@ -230,7 +230,7 @@ bar {
     colors {
       background #00000080
         statusline #ffffff
-        separator #0000ff
+        separator #009ff9
 
         # colors           outline backgr  number
         focused_workspace  #4c7899 #285577 #ffffff
