@@ -49,7 +49,7 @@ floating_modifier $mod
 #tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
 bindsym $mod+q kill
@@ -192,17 +192,20 @@ bindsym $mod+i workspace prev
 bindsym Mod1+Tab workspace back_and_forth
 
 # Display Resolution
-exec_always xrandr --output eDP-1 --mode 1920x1080 --primary
+exec_always --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --primary
 
 # Compositor
-exec picom --animations --experimental-backend --config ~/Downloads/workspace/Fallout_NV_leftwm_theme/configs/picom.conf
+exec --no-startup-id picom --config ~/Downloads/workspace/Fallout_NV_leftwm_theme/configs/picom.conf
 
 # Brightness control
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
 
 # Display Wallpaper
-exec_always feh --bg-max ~/Pictures/BEST/tixnen/0b0a0687885a1e5eb2a1b8b85d8e646d.jpeg
+exec_always --no-startup-id feh --bg-max ~/Pictures/BEST/tixnen/8773594ff5dba99266bb7f784d4379eb.jpeg
+
+# Unclutter to hide mouse pointer
+exec --no-startup-id unclutter
 
 # Resize windows
 bindsym $mod+Ctrl+l resize shrink width 5 px or 5 ppt
