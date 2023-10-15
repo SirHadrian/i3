@@ -49,7 +49,7 @@ floating_modifier $mod
 #tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+Return exec --no-startup-id st
 
 # kill focused window
 bindsym $mod+q kill
@@ -202,7 +202,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
 
 # Display Wallpaper
-exec_always --no-startup-id feh --bg-max ~/Pictures/BEST/tixnen/8773594ff5dba99266bb7f784d4379eb.jpeg
+exec_always --no-startup-id feh --bg-max ~/Pictures/BEST/tixnen/85e3f61bb053f18876d996c24b4d21f0.jpeg
 
 # Unclutter to hide mouse pointer
 exec --no-startup-id unclutter
