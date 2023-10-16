@@ -207,6 +207,9 @@ exec_always --no-startup-id feh --bg-max ~/Pictures/artists/tixnen/85e3f61bb053f
 # Open current wallpaper
 bindsym $mod+b exec --no-startup-id gwenview $(cat ~/.wallpaper)
 
+# Next wallpaper
+bindsym $mod+x exec --no-startup-id kill $(pstree -lp | grep -- wallpaper | sed "s/.*sleep(\([0-9]\+\)).*/\1/")
+
 # Unclutter to hide mouse pointer
 exec --no-startup-id unclutter
 
