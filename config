@@ -205,7 +205,7 @@ bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
 exec_always --no-startup-id feh --bg-max ~/Pictures/artists/tixnen/85e3f61bb053f18876d996c24b4d21f0.jpeg
 
 # Open current wallpaper
-bindsym $mod+b exec --no-startup-id gwenview $(cat ~/.wallpaper)
+bindsym $mod+b exec --no-startup-id gwenview "$(cat ~/.wallpaper)"
 
 # Next wallpaper
 bindsym $mod+n exec --no-startup-id kill $(pstree -lp | grep -- wallpaper | sed "s/.*sleep(\([0-9]\+\)).*/\1/")
