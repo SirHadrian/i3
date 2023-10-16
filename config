@@ -87,7 +87,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+b split h
+bindsym $mod+c split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -202,7 +202,10 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
 
 # Display Wallpaper
-exec_always --no-startup-id feh --bg-max ~/Pictures/BEST/tixnen/85e3f61bb053f18876d996c24b4d21f0.jpeg
+exec_always --no-startup-id feh --bg-max ~/Pictures/artists/tixnen/85e3f61bb053f18876d996c24b4d21f0.jpeg
+
+# Open current wallpaper
+bindsym $mod+b exec --no-startup-id gwenview $(cat ~/.wallpaper)
 
 # Unclutter to hide mouse pointer
 exec --no-startup-id unclutter
