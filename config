@@ -49,7 +49,7 @@ floating_modifier $mod
 #tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id st
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
 bindsym $mod+q kill
@@ -154,7 +154,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec i3-msg exit
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -202,7 +202,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
 
 # Display Wallpaper
-exec_always --no-startup-id feh --bg-max ~/Pictures/artists/tixnen/40f80a1a74978a7fc8191d1024f2135e.jpeg
+exec_always --no-startup-id feh --bg-max ~/Pictures/artists/apone3d/87a2bc2fa5c84db51cdbde9d78fc8340.jpeg
 
 # Open current wallpaper
 bindsym $mod+b exec --no-startup-id gwenview "$(cat ~/.wallpaper)"
