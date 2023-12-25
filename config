@@ -32,7 +32,7 @@ font pango:CaskaydiaCove Nerd Font Mono 11
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-# exec --no-startup-id nm-applet
+exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -55,7 +55,7 @@ bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+r exec --no-startup-id dmenu_run -b
+bindsym $mod+r exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -235,7 +235,7 @@ bar {
   status_command i3status -c ~/.config/i3/i3status.conf
   # i3bar_command i3bar --transparency
   i3bar_command i3bar
-  position bottom
+  position top
   font pango:CaskaydiaCove Nerd Font Mono 11
   tray_output primary
 
