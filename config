@@ -202,7 +202,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
 
 # Display Wallpaper
-exec_always --no-startup-id feh --bg-max ~/Pictures/artists/apone3d/87a2bc2fa5c84db51cdbde9d78fc8340.jpeg
+exec_always --no-startup-id feh --bg-max ~/.config/i3/wallpaper.jpg
 
 # Open current wallpaper
 bindsym $mod+b exec --no-startup-id gwenview "$(cat ~/.wallpaper)"
