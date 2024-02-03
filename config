@@ -264,8 +264,9 @@ bindsym $mod+Ctrl+h resize grow width 5 px or 5 ppt
 # set primary gruvbox colorscheme colors
 set $bg       #282828
 set $red      #cc241d
-set $green    #98971a
+set $green    #aeae1e
 set $orange   #d79921
+set $yellow   #e6e600
 set $blue     #224244
 set $purple   #b16286
 set $aqua     #83af83
@@ -299,6 +300,7 @@ bar {
     # workspaces section
     #                    border    backgr.   text
     focused_workspace    $green    $green    $black
+    # focused_workspace    $aqua     $aqua     $black
     inactive_workspace   $darkgray $darkgray $orange
     active_workspace     $darkgray $darkgray $orange
     urgent_workspace     $red      $red      $bg
@@ -306,9 +308,9 @@ bar {
 }
 
 # class                 border    backgr.   text    indic.  child_border
-client.focused          $blue     $blue     $white  $purple $blue
+client.focused          $blue     $blue     $yellow $purple $blue
+client.unfocused        $darkgray $darkgray $aqua   $purple $darkgray
 client.focused_inactive $darkgray $darkgray $orange $purple $darkgray
-client.unfocused        $darkgray $darkgray $lgray  $purple $darkgray
 client.urgent           $red      $red      $white  $red    $red
 
 
