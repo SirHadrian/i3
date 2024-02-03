@@ -273,7 +273,7 @@ set $gray     #a89984
 set $darkgray #1d2021
 set $white    #ffffff
 set $black    #000000
-set $lgray #bdae93
+set $lgray    #bdae93
 
 # font used by i3 for titles and bars, global
 font pango:CaskaydiaCove Nerd Font Mono 12
