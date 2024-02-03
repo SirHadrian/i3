@@ -266,7 +266,7 @@ set $bg       #282828
 set $red      #cc241d
 set $green    #aeae1e
 set $orange   #d79921
-set $yellow   #cccc00
+set $yellow   #e6e600
 set $blue     #224244
 set $purple   #b16286
 set $aqua     #83af83
