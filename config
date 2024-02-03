@@ -257,15 +257,15 @@ bindsym $mod+Ctrl+h resize grow width 5 px or 5 ppt
 #   }
 # }
 
-###############
-#THEME GRUVBOX#
-###############
+################
+# THEME ORANGE #
+################
 
 # set primary gruvbox colorscheme colors
 set $bg       #282828
 set $red      #cc241d
 set $green    #98971a
-set $yellow   #d79921
+set $orange   #d79921
 set $blue     #224244
 set $purple   #b16286
 set $aqua     #83af83
@@ -282,38 +282,30 @@ bar {
   position top
   # font pango:CaskaydiaCove Nerd Font Mono 12
   tray_output primary
+  separator_symbol ":|:"
 
   colors {
     # bar background color
     background $bg
     # text color used for blocks that do not have a color specified.
-    statusline $yellow
-    separator  $green
+    statusline $orange
+    separator  $aqua
     # font for bar
     # font pango:CaskaydiaCove Nerd Font Mono 12
 
     # workspaces section
     #                    border    backgr.   text
-    focused_workspace    $aqua     $aqua     $darkgray
-    # focused_workspace    $green    $green    $darkgray
-    inactive_workspace   $darkgray $darkgray $yellow
-    active_workspace     $darkgray $darkgray $yellow
+    focused_workspace    $orange   $orange   $darkgray
+    inactive_workspace   $darkgray $darkgray $orange
+    active_workspace     $darkgray $darkgray $orange
     urgent_workspace     $red      $red      $bg
   }
 }
 
-# green gruvbox
-# class                 border|backgr|text|indicator|child_border
-# client.focused          $green $green $darkgray $purple $darkgray
-# client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
-# client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
-# client.urgent           $red $red $white $red $red
-
-# blue gruvbox
 # class                 border    backgr.   text    indic.  child_border
-client.focused          $blue     $blue     $yellow $purple $blue
-client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
-client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
+client.focused          $blue     $blue     $orange $purple $blue
+client.focused_inactive $darkgray $darkgray $orange $purple $darkgray
+client.unfocused        $darkgray $darkgray $orange $purple $darkgray
 client.urgent           $red      $red      $white  $red    $red
 
 
