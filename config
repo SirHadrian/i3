@@ -257,9 +257,9 @@ bindsym $mod+Ctrl+h resize grow width 5 px or 5 ppt
 #   }
 # }
 
-################
-# THEME ORANGE #
-################
+#################
+# THEME GRUVBOX #
+#################
 
 # set primary gruvbox colorscheme colors
 set $bg       #282828
@@ -295,7 +295,7 @@ bar {
 
     # workspaces section
     #                    border    backgr.   text
-    focused_workspace    $orange   $orange   $darkgray
+    focused_workspace    $green    $green    $darkgray
     inactive_workspace   $darkgray $darkgray $orange
     active_workspace     $darkgray $darkgray $orange
     urgent_workspace     $red      $red      $bg
