@@ -273,6 +273,7 @@ set $gray     #a89984
 set $darkgray #1d2021
 set $white    #ffffff
 set $black    #000000
+set $lgray #bdae93
 
 # font used by i3 for titles and bars, global
 font pango:CaskaydiaCove Nerd Font Mono 12
@@ -307,7 +308,7 @@ bar {
 # class                 border    backgr.   text    indic.  child_border
 client.focused          $blue     $blue     $white  $purple $blue
 client.focused_inactive $darkgray $darkgray $orange $purple $darkgray
-client.unfocused        $darkgray $darkgray $aqua   $purple $darkgray
+client.unfocused        $darkgray $darkgray $lgray  $purple $darkgray
 client.urgent           $red      $red      $white  $red    $red
 
 
