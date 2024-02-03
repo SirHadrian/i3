@@ -298,7 +298,7 @@ bar {
 
     # workspaces section
     #                    border    backgr.   text
-    focused_workspace    $lgray    $lgray    $black
+    focused_workspace    $green    $green    $black
     inactive_workspace   $darkgray $darkgray $orange
     active_workspace     $darkgray $darkgray $orange
     urgent_workspace     $red      $red      $bg
