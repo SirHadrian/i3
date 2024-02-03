@@ -266,7 +266,7 @@ set $bg       #282828
 set $red      #cc241d
 set $green    #aeae1e
 set $orange   #d79921
-set $yellow   #e6e600
+set $yellow   #cccc00
 set $blue     #224244
 set $purple   #b16286
 set $aqua     #83af83
@@ -300,7 +300,6 @@ bar {
     # workspaces section
     #                    border    backgr.   text
     focused_workspace    $green    $green    $black
-    # focused_workspace    $aqua     $aqua     $black
     inactive_workspace   $darkgray $darkgray $orange
     active_workspace     $darkgray $darkgray $orange
     urgent_workspace     $red      $red      $bg
