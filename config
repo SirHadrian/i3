@@ -214,6 +214,9 @@ bindsym $mod+n exec --no-startup-id kill $(pstree -lp | grep -- wallpaper | sed 
 # Unclutter to hide mouse pointer
 exec --no-startup-id unclutter
 
+# alternate layouts python-i3ipc required!!!
+exec --no-startup-id ~/.config/i3/i3layout.py
+
 # Resize windows
 bindsym $mod+Ctrl+l resize shrink width 5 px or 5 ppt
 bindsym $mod+Ctrl+k resize grow height 5 px or 5 ppt
