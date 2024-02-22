@@ -215,7 +215,7 @@ bindsym $mod+n exec --no-startup-id kill $(pstree -lp | grep -- wallpaper | sed 
 exec --no-startup-id unclutter
 
 # alternate layouts python-i3ipc required!!!
-exec --no-startup-id ~/.config/i3/i3layout.py
+# exec --no-startup-id ~/.config/i3/i3layout.py
 
 # Resize windows
 bindsym $mod+Ctrl+l resize shrink width 5 px or 5 ppt
@@ -310,16 +310,16 @@ bar {
 }
 
 # class                 border    backgr.   text    indic.  child_border
-# client.focused          $blue     $blue     $yellow $purple $blue
-# client.unfocused        $darkgray $darkgray $aqua   $purple $darkgray
-# client.focused_inactive $darkgray $darkgray $orange $purple $darkgray
-# client.urgent           $red      $red      $white  $red    $red
+client.focused          $darkgray $blue     $yellow $purple $blue
+client.unfocused        $darkgray $darkgray $aqua   $purple $darkgray
+client.focused_inactive $darkgray $darkgray $orange $purple $darkgray
+client.urgent           $red      $red      $white  $red    $red
 
 # class                 border    backgr.   text    indic.      child_border
-client.focused          $darkgray $blue     $yellow $darkgray   $darkgray
-client.unfocused        $darkgray $darkgray $aqua   $darkgray   $darkgray
-client.focused_inactive $darkgray $darkgray $orange $darkgray   $darkgray
-client.urgent           $red      $red      $white  $red        $red
+# client.focused          $darkgray $blue     $yellow $darkgray   $darkgray
+# client.unfocused        $darkgray $darkgray $aqua   $darkgray   $darkgray
+# client.focused_inactive $darkgray $darkgray $orange $darkgray   $darkgray
+# client.urgent           $red      $red      $white  $red        $red
 
 
 ####################
