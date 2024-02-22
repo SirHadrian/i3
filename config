@@ -310,7 +310,7 @@ bar {
 }
 
 # class                 border    backgr.   text    indic.  child_border
-client.focused          $darkgray $blue     $yellow $purple $blue
+client.focused          $darkgray $blue     $yellow $purple $darkgray
 client.unfocused        $darkgray $darkgray $aqua   $purple $darkgray
 client.focused_inactive $darkgray $darkgray $orange $purple $darkgray
 client.urgent           $red      $red      $white  $red    $red
