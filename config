@@ -217,6 +217,9 @@ exec --no-startup-id unclutter
 # alternate layouts python-i3ipc required!!!
 # exec --no-startup-id ~/.config/i3/i3layout.py
 
+# Turn bluetooth off on startup
+exec --no-startup-id bluetoothctl power off
+
 # Resize windows
 bindsym $mod+Ctrl+l resize shrink width 5 px or 5 ppt
 bindsym $mod+Ctrl+k resize grow height 5 px or 5 ppt
