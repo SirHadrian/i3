@@ -199,8 +199,8 @@ exec_always --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --primary
 exec --no-startup-id picom --config ~/.config/i3/picom.conf
 
 # Brightness control
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 20%-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +20%
 
 # Display Wallpaper
 exec_always --no-startup-id feh --bg-fill ~/.config/i3/vimkeybindings.png
