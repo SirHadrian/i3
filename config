@@ -203,7 +203,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 20%-
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +20%
 
 # Display Wallpaper
-exec_always --no-startup-id feh --bg-fill ~/.config/i3/vimkeybindings.png
+exec_always --no-startup-id feh --bg-fill ~/.config/i3/fallout.jpg
 
 # Open current wallpaper
 bindsym $mod+b exec --no-startup-id feh -g 1920x1080 --auto-zoom --scale-down --image-bg black --action1 "gio trash %F" -- "$(cat ~/.wallpaper)"
