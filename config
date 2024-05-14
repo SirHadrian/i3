@@ -283,7 +283,7 @@ bar {
                 focused_workspace    $green    $green    $black
                 inactive_workspace   $darkgray $darkgray $orange
                 active_workspace     $darkgray $darkgray $orange
-                urgent_workspace     $red      $red      $bg
+                urgent_workspace     $orange   $orange   $black
         }
 }
 
@@ -291,10 +291,4 @@ bar {
 client.focused          $darkgray $stone    $orange $purple $darkgray
 client.unfocused        $darkgray $darkgray $orange $purple $darkgray
 client.focused_inactive $darkgray $darkgray $orange $purple $darkgray
-client.urgent           $red      $red      $white  $red    $red
-
-# class                 border    backgr.   text    indic.      child_border
-# client.focused          $darkgray $blue     $yellow $darkgray   $darkgray
-# client.unfocused        $darkgray $darkgray $aqua   $darkgray   $darkgray
-# client.focused_inactive $darkgray $darkgray $orange $darkgray   $darkgray
-# client.urgent           $red      $red      $white  $red        $red
+client.urgent           $darkgray $orange   $black  $purple $darkgray
