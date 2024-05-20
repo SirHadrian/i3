@@ -50,7 +50,7 @@ floating_modifier $mod
 #tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+Return exec --no-startup-id alacritty_tmux
 
 # kill focused window
 bindsym $mod+q kill
@@ -219,6 +219,9 @@ exec --no-startup-id unclutter
 
 # Turn bluetooth off on startup
 exec --no-startup-id bluetoothctl power off
+
+# Default workspaces layout to tabbed
+workspace_layout tabbed
 
 # Resize windows
 bindsym $mod+Ctrl+l resize shrink width 5 px or 5 ppt
