@@ -50,7 +50,7 @@ floating_modifier $mod
 #tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id alacritty_tmux
+bindsym $mod+Return exec --no-startup-id alacritty --command tmux new-session -A -s console
 
 # kill focused window
 bindsym $mod+q kill
