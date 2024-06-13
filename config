@@ -54,6 +54,8 @@ bindsym $mod+Return exec --no-startup-id alacritty --command tmux new-session -A
 
 # kill focused window
 bindsym $mod+q kill
+# Close all windows on all workspaces (any class string)
+bindsym $mod+Shift+q [class=”.*”] kill
 
 # start dmenu (a program launcher)
 bindsym $mod+r exec --no-startup-id dmenu_run
