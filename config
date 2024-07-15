@@ -208,7 +208,7 @@ bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +20%
 exec_always --no-startup-id feh --bg-fill ~/.config/i3/fallout.jpg
 
 # Open current wallpaper
-bindsym $mod+b exec --no-startup-id feh --geometry 1920x1080 --scale-down --image-bg black --action1 "trashy %F" --action2 "savefeh %F" -- "$(cat ~/.wallpaper)"
+bindsym $mod+b exec --no-startup-id feh --geometry 1920x1080 --scale-down --image-bg black --action1 "t %F" --action2 "savefeh %F" -- "$(cat ~/.wallpaper)"
 
 # Next wallpaper
 bindsym $mod+n exec --no-startup-id kill $(pstree -lp | grep -- wallpaper | sed "s/.*sleep(\([0-9]\+\)).*/\1/")
